@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Frontend Mentor | Time tracking dashboard</title>
+    <style>
+      .attribution {
+        font-size: 13px;
+        text-align: center;
+        color: aliceblue;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section id="container">
+        <div class="wrapper">
+          <div class="grid-container">
+            <div class="profile-card">
+              <div class="profile-card-top">
+                <div class="profile-picture">
+                  <img src="./images/image-jeremy.png" alt="jeremy picture" />
+                </div>
+                <div class="profile-info">
+                  <p class="report">Report for</p>
+                  <p class="profile-name">Jeremy Robson</p>
+                </div>
+              </div>
+              <div class="profile-card-bottom">
+                <div class="time-intervals">
+                  <label for="daily">
+                    <input type="radio" name="time" value="daily" id="daily" />
+                    <span>Daily</span>
+                  </label>
+                  <label for="weekly">
+                    <input
+                      type="radio"
+                      name="time"
+                      value="weekly"
+                      id="weekly"
+                      checked
+                    />
+                    <span>Weekly</span>
+                  </label>
+                  <label for="monthly">
+                    <input
+                      type="radio"
+                      name="time"
+                      id="monthly"
+                      value="Monthly"
+                    />
+                    <span>Monthly</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="work-statistics">
+              <div class="stats-card-wrapper work-card">
+                <div class="stats-card">
+                  <div class="stats-card-top">
+                    <p>Work</p>
+                    <img src="./images/icon-ellipsis.svg" alt="work icon" />
+                  </div>
+                  <div class="stats-card-bottom">
+                    <p class="hours-worked">32hrs</p>
+                    <p class="last-week-hours">Last Week - 36hrs</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="stats-card-wrapper play-card">
+                <div class="stats-card">
+                  <div class="stats-card-top">
+                    <p>Play</p>
+                    <img src="./images/icon-ellipsis.svg" alt="work icon" />
+                  </div>
+                  <div class="stats-card-bottom">
+                    <p class="hours-worked">10hrs</p>
+                    <p class="last-week-hours">Last Week - 8hrs</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="stats-card-wrapper study-card">
+                <div class="stats-card">
+                  <div class="stats-card-top">
+                    <p>Study</p>
+                    <img src="./images/icon-ellipsis.svg" alt="work icon" />
+                  </div>
+                  <div class="stats-card-bottom">
+                    <p class="hours-worked">4hrs</p>
+                    <p class="last-week-hours">Last Week - 7hrs</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="stats-card-wrapper exercise-card">
+                <div class="stats-card">
+                  <div class="stats-card-top">
+                    <p>Exercise</p>
+                    <img src="./images/icon-ellipsis.svg" alt="work icon" />
+                  </div>
+                  <div class="stats-card-bottom">
+                    <p class="hours-worked">4hrs</p>
+                    <p class="last-week-hours">Last Week - 5hrs</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="stats-card-wrapper social-card">
+                <div class="stats-card">
+                  <div class="stats-card-top">
+                    <p>Social</p>
+                    <img src="./images/icon-ellipsis.svg" alt="work icon" />
+                  </div>
+                  <div class="stats-card-bottom">
+                    <p class="hours-worked">5hrs</p>
+                    <p class="last-week-hours">Last Week - 10hrs</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="stats-card-wrapper selfCare-card">
+                <div class="stats-card">
+                  <div class="stats-card-top">
+                    <p>Self Care</p>
+                    <img src="./images/icon-ellipsis.svg" alt="work icon" />
+                  </div>
+                  <div class="stats-card-bottom">
+                    <p class="hours-worked">2hrs</p>
+                    <p class="last-week-hours">Last Week - 2hrs</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script src="./javaScript/app.js"></script>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/alaa1945">Alaa</a>.
+      </div>
+    </main>
+  </body>
+</html>
